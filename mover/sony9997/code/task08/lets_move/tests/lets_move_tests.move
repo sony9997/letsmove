@@ -2,17 +2,17 @@
 #[test_only]
 module lets_move::lets_move_tests {
     // uncomment this line to import the module
-    // use check_in::check_in;
+    // use lets_move::lets_move;
 
     const ENotImplemented: u64 = 0;
 
     #[test]
-    fun test_check_in() {
+    fun test_lets_move() {
         // pass
     }
 
-    #[test, expected_failure(abort_code = ::check_in::check_in_tests::ENotImplemented)]
-    fun test_check_in_fail() {
+    #[test, expected_failure(abort_code = ::lets_move::lets_move_tests::ENotImplemented)]
+    fun test_lets_move_fail() {
         abort ENotImplemented
     }
 }
